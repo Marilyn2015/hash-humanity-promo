@@ -1041,3 +1041,11 @@ textarea{
     transition: none !important;
   }
 }
+/* Remove the square/border around the logo */
+
+.brand img{
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
