@@ -382,3 +382,284 @@ footer .tag{
     height: 104px;
   }
 }
+/* =========================================================
+   HASH HUMANITY — HUMAN EDITORIAL COLOR SYSTEM
+   Paste at the END of the stylesheet
+   ========================================================= */
+
+:root{
+  color-scheme: light;
+
+  --paper: #f6efe5;
+  --paper-deep: #e9dfd1;
+
+  --ink: #251d2b;
+  --ink-soft: #44384a;
+
+  --muted: #716774;
+  --muted-2: #978c98;
+
+  --coral: #df6858;
+  --coral-soft: #f5c2b9;
+
+  --violet: #7966c6;
+  --violet-soft: #d9d0f5;
+
+  --citron: #d7ce57;
+  --citron-soft: #f0edba;
+
+  --forest: #376b59;
+  --forest-soft: #bdd8c9;
+
+  --line: rgba(37,29,43,.15);
+  --line-strong: rgba(37,29,43,.28);
+
+  --accent: var(--coral);
+  --accent-soft: rgba(223,104,88,.14);
+}
+
+html,
+body{
+  color: var(--ink) !important;
+  background: var(--paper) !important;
+}
+
+body{
+  background:
+    radial-gradient(900px 600px at 100% -10%, rgba(121,102,198,.25), transparent 65%),
+    radial-gradient(760px 500px at -10% 24%, rgba(223,104,88,.16), transparent 62%),
+    radial-gradient(920px 640px at 52% 110%, rgba(215,206,87,.20), transparent 66%),
+    var(--paper) !important;
+}
+
+body::before{
+  opacity: .10;
+  mix-blend-mode: multiply;
+}
+
+/* Header */
+header{
+  background: rgba(246,239,229,.88) !important;
+  border-bottom-color: var(--line) !important;
+}
+
+.brand span,
+.brand strong{
+  color: var(--ink) !important;
+}
+
+.brand img{
+  border-color: var(--line-strong) !important;
+}
+
+.btn{
+  color: var(--ink) !important;
+  border-color: var(--line-strong) !important;
+  background: rgba(255,255,255,.38) !important;
+}
+
+.btn:hover{
+  background: rgba(255,255,255,.72) !important;
+  border-color: var(--ink) !important;
+}
+
+.btn.primary{
+  color: #fff9f2 !important;
+  border-color: var(--coral) !important;
+  background: var(--coral) !important;
+}
+
+.btn.primary:hover{
+  color: #fff9f2 !important;
+  border-color: #c85043 !important;
+  background: #c85043 !important;
+}
+
+.lang-menu{
+  border-color: var(--line-strong) !important;
+  background: #fffaf3 !important;
+}
+
+.lang-menu button{
+  color: var(--ink-soft) !important;
+}
+
+.lang-menu button:hover,
+.lang-menu button[aria-selected="true"]{
+  color: var(--ink) !important;
+  background: rgba(121,102,198,.12) !important;
+}
+
+/* Hero */
+.eyebrow{
+  color: var(--forest) !important;
+}
+
+.eyebrow-dot{
+  background: var(--forest) !important;
+  box-shadow: 0 0 0 5px rgba(55,107,89,.14) !important;
+}
+
+h1,
+h2,
+h3{
+  color: var(--ink) !important;
+}
+
+h1 em,
+h2 em{
+  color: var(--violet) !important;
+}
+
+.lead{
+  color: var(--ink-soft) !important;
+}
+
+.lead strong{
+  color: var(--ink) !important;
+}
+
+.proofline .num{
+  color: var(--coral) !important;
+}
+
+.proofline .lbl,
+.subline{
+  color: var(--muted) !important;
+}
+
+/* Phone frame keeps the product visual premium and dark. */
+.device{
+  border-color: rgba(37,29,43,.28) !important;
+  background:
+    linear-gradient(145deg, #5e526a 0%, #241d2a 35%, #100d14 72%, #4d4358 100%) !important;
+  box-shadow: 0 34px 76px rgba(66,43,72,.27) !important;
+}
+
+.device-orbit::before{
+  border-color: rgba(121,102,198,.28) !important;
+  background:
+    radial-gradient(circle, rgba(121,102,198,.20) 0%, transparent 68%) !important;
+}
+
+/* Section labels */
+.kicker{
+  color: var(--forest) !important;
+}
+
+/* Feature cards get controlled color—not random rainbow. */
+.grid{
+  border-color: var(--line-strong) !important;
+  background: var(--line-strong) !important;
+}
+
+.card{
+  background: #fffaf3 !important;
+}
+
+.card:hover{
+  background: #fffdf8 !important;
+}
+
+.card .idx{
+  color: var(--violet) !important;
+}
+
+.card:nth-child(1){
+  background: #f8ddd7 !important;
+}
+
+.card:nth-child(1) .idx{
+  color: #a53e35 !important;
+}
+
+.card:nth-child(2){
+  background: #e4ddf6 !important;
+}
+
+.card:nth-child(2) .idx{
+  color: #5b499b !important;
+}
+
+.card:nth-child(3){
+  background: #f3efc6 !important;
+}
+
+.card:nth-child(3) .idx{
+  color: #787015 !important;
+}
+
+.card:nth-child(4){
+  background: #d9e9df !important;
+}
+
+.card:nth-child(4) .idx{
+  color: #23513f !important;
+}
+
+.card p{
+  color: var(--ink-soft) !important;
+}
+
+/* CTA */
+.cta{
+  color: #fff8f0;
+  border-color: #49395d !important;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(215,206,87,.22), transparent 38%),
+    radial-gradient(circle at 5% 90%, rgba(223,104,88,.25), transparent 45%),
+    #31263d !important;
+}
+
+.cta h2,
+.cta h2 em{
+  color: #fff8f0 !important;
+}
+
+.cta h2 em{
+  color: var(--citron) !important;
+}
+
+.cta p{
+  color: rgba(255,248,240,.78) !important;
+}
+
+.fineprint{
+  color: rgba(255,248,240,.58) !important;
+  border-top-color: rgba(255,248,240,.18) !important;
+}
+
+.fineprint strong{
+  color: var(--citron) !important;
+}
+
+/* Footer */
+footer{
+  color: var(--muted) !important;
+  border-top-color: var(--line-strong) !important;
+}
+
+footer .tag{
+  color: var(--ink-soft) !important;
+}
+
+/* Mobile stays colorful without becoming too busy. */
+@media (max-width: 700px){
+  body{
+    background:
+      radial-gradient(480px 370px at 110% 0%, rgba(121,102,198,.20), transparent 70%),
+      radial-gradient(440px 340px at -12% 30%, rgba(223,104,88,.12), transparent 72%),
+      var(--paper) !important;
+  }
+
+  .device-orbit{
+    background: rgba(121,102,198,.08);
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3),
+  .card:nth-child(4){
+    border-bottom-color: var(--line-strong) !important;
+  }
+}
