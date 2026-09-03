@@ -12,7 +12,7 @@
     content="Hash Humanity is a human-first network protected by HumanKey. Real people in. Bots, duplicate accounts, and artificial noise out."
   />
 
-  <meta name="theme-color" content="#0a0b0d" />
+  <meta name="theme-color" content="#f4eee5" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
   <meta property="og:type" content="website" />
@@ -45,18 +45,10 @@
   <link rel="apple-touch-icon" href="logo.png" />
   <link rel="preload" as="image" href="app-preview.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
-    rel="stylesheet"
-  />
-
- 
+  <link rel="stylesheet" href="./style.css?v=1" />
 </head>
 
-<body>
+<body class="home-page">
   <header>
     <div class="wrap header-inner">
       <a class="brand" href="#home" aria-label="Hash Humanity home">
@@ -100,6 +92,7 @@
       <div>
         <div class="eyebrow">
           <span class="eyebrow-dot"></span>
+
           <span data-i18n="eyebrow">
             HumanKey verified · Human-first by design
           </span>
@@ -112,12 +105,20 @@
 
         <p class="lead" data-i18n-html="lead">
           Hash Humanity is a new social layer for real people.
-          <strong>HumanKey</strong> helps reduce bots, duplicate accounts,
-          and artificial engagement before they reach the conversation.
+          <strong>HumanKey</strong> helps reduce bots, duplicate accounts, and
+          artificial engagement before they reach the conversation.
         </p>
 
         <div class="proofline">
-          <span class="num">1,230</span>
+          <span
+            class="num"
+            id="humanCount"
+            aria-live="polite"
+            aria-label="Verified humans"
+          >
+            —
+          </span>
+
           <span class="lbl" data-i18n="member_lbl">
             humans and counting
           </span>
@@ -159,7 +160,11 @@
       <div class="grid" aria-label="Hash Humanity features">
         <article class="card">
           <span class="idx">01</span>
-          <h3 data-i18n="card1_h3">HumanKey at the gate</h3>
+
+          <h3 data-i18n="card1_h3">
+            HumanKey at the gate
+          </h3>
+
           <p data-i18n="card1_p">
             One person, one presence. HumanKey helps stop bot farms,
             impersonation, spam, and duplicate accounts before they enter the
@@ -169,7 +174,11 @@
 
         <article class="card">
           <span class="idx">02</span>
-          <h3 data-i18n="card2_h3">Proof without exposure</h3>
+
+          <h3 data-i18n="card2_h3">
+            Proof without exposure
+          </h3>
+
           <p data-i18n="card2_p">
             Liveness checks, passkeys, and privacy-preserving proofs help
             confirm that you are human without making your identity the product.
@@ -178,7 +187,11 @@
 
         <article class="card">
           <span class="idx">03</span>
-          <h3 data-i18n="card3_h3">A feed worth your time</h3>
+
+          <h3 data-i18n="card3_h3">
+            A feed worth your time
+          </h3>
+
           <p data-i18n="card3_p">
             Less manipulation. Less manufactured conflict. More curiosity,
             creativity, and conversations with people who are actually here.
@@ -187,7 +200,11 @@
 
         <article class="card">
           <span class="idx">04</span>
-          <h3 data-i18n="card4_h3">Humanity has a key</h3>
+
+          <h3 data-i18n="card4_h3">
+            Humanity has a key
+          </h3>
+
           <p data-i18n="card4_p">
             HumanKey is proof of personhood for a network where humans—not
             bots—shape what gets seen, shared, and built.
@@ -231,11 +248,19 @@
   </main>
 
   <noscript>
-    <div style="padding:18px;text-align:center;background:#101216;color:#fff;">
+    <div
+      style="
+        padding:18px;
+        color:#29201f;
+        background:#f4eee5;
+        border-top:1px solid rgba(41,32,31,.14);
+        text-align:center;
+      "
+    >
       Hash Humanity is a human-first social network.
       <a
         href="https://hashhumanity.world/universe"
-        style="color:#50dbf7;font-weight:700;"
+        style="color:#a64b43;font-weight:700;"
       >
         Enter Hash Humanity
       </a>
